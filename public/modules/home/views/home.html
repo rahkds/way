@@ -1,3 +1,38 @@
 <div>
-    <h1>Welcome {{name}}</h1>
+    <div class="simple-cal-container">
+    	
+    <div class="">
+    	<input type="text" class="result-view" ng-disabled="1" ng-model="calInfo.display">
+    </div>
+
+
+    <div class="cal-buttons">
+
+    	<button class="btn btn-light" ng-click="clicknumber('7')">7</button>
+    	<button class="btn btn-light" ng-click="clicknumber('8')">8</button>
+    	<button class="btn btn-light" ng-click="clicknumber('9')">9</button>
+    	<button class="btn btn-info" ng-click="clickopr('/')">/</button>
+    	<br/>
+
+    	<button class="btn btn-light" ng-click="clicknumber('4')">4</button>
+    	<button class="btn btn-light" ng-click="clicknumber('5')">5</button>
+    	<button class="btn btn-light" ng-click="clicknumber('6')">6</button>
+    	<button class="btn btn-info" ng-click="clickopr('*')">*</button>
+    	<br/>
+
+    	<button class="btn btn-light" ng-click="clicknumber('1')">1</button>
+    	<button class="btn btn-light" ng-click="clicknumber('2')">2</button>
+    	<button class="btn btn-light" ng-click="clicknumber('3')">3</button>
+    	<button class="btn btn-info" ng-click="clickopr('-')">-</button>
+    	<br/>
+
+
+    	<button class="btn btn-light" ng-click="clicknumber('0')">0</button>
+    	<button class="btn btn-light" ng-click="clicknumber('.')">.</button>
+    	<button class="btn btn-light" ng-click="clear()">Clear</button>
+    	<button class="btn btn-info" ng-click="clickopr('+')">+</button>
+    	<br/>
+    	<button class="equal-button btn btn-default" ng-click="clickequal()">=</button>
+    </div>	
+    </div>
 </div>
